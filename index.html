@@ -1,0 +1,75 @@
+<!-- Create Assignment list single page website using HTML, Bootstrap(table and form), and JavaScript
+•	A Bootstrap styled table representing your choice of data.
+•	A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container" style="background: rgb(252, 222, 227)">
+    <br>
+        <h1 class="text" style="text-align:center">Assignment List</h1>
+        <br>
+        <!--section for a user insert and delete form-->
+        <div class="card" style="background: rgb(251, 218, 242)">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6" style="border: 2px solid black">
+                        <div class="form-group">
+                            <label for="new-name">Name</label>
+                            <input type="text" class="form-control" id="new-name" placeholder="Name">
+                        </div>
+                    </div>
+                   <div class="col-sm-3" style="border: 2px solid black">
+                        <div class="form-group">
+                            <label for="new-class">Class</label>
+                            <input type="text" class="form-control" id="new-class" placeholder="Class">
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="border: 2px solid black">
+                        <div class="form-group">
+                            <label for="new-subject">Subject</label>
+                            <input type="text" class="form-control" id="new-subject" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5" style="border: 2px solid black">
+                        <div class="form-group">
+                            <label for="new-received-date">Received Date</label>
+                            <input type="date" class="form-control" id="new-received-date">
+                        </div>
+                    </div>
+                    <div class="col-sm-5" style="border: 2px solid black">
+                        <div class="form-group">
+                            <label for="new-deadline-date">Deadline Date</label>
+                            <input type="date" class="form-control" id="new-deadline-date">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-center" style="border: 2px solid black">
+                        <button id="add" class="btn btn-success from-control "style="margin: auto">Add</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Subject</th>
+                <th>Received Date</th>
+                <th>Deadline Date</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
