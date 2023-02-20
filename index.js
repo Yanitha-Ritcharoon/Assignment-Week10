@@ -23,7 +23,7 @@ document.getElementById('add').addEventListener('click', () => {
     const xMarkEmoji = '❌';
     
     if (receiveDate <= deadlineDate) {
-        // If assignment received before or on deadline, add a ")n-tine" button
+        // If assignment received before or on deadline, add a "On-tine" button
         let btn = document.createElement('button');
         btn.className = 'btn btn-success';
         btn.id = id;
